@@ -25,4 +25,4 @@ Current Focus
 Learning Git and GitHub step by step.
 
 My favorite anime
-![Anime Image](goku1.jpg)
+![Coding Image](Coding.jfif)
