@@ -24,5 +24,4 @@ Current Focus
 
 Learning Git and GitHub step by step.
 
-My favorite anime
 ![Coding Image](Coding.jfif)
