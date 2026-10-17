@@ -4,64 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Aman's Personal Website</title>
+    <title>Aman | Developer Portfolio</title>
 
-    <!-- Connect CSS to HTML -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Hello, I'm Aman!</h1>
-        <p>BCA Student | Aspiring Software Developer</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Aman.dev</a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Aman!</span></h1>
+
+            <h2>Aspiring Software Developer</h2>
+
+            <p class="hero-description">
+                I'm a BCA student learning web development,
+                programming, and software engineering.
+                I enjoy turning ideas into real projects.
+            </p>
+
+            <a href="#projects" class="button">Explore My Work</a>
+        </div>
     </header>
 
     <main>
 
-        <section class="about">
-            <h2>About Me</h2>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+
             <p>
-                I am a BCA student interested in software development
-                and technology. I am learning programming and building
-                projects to improve my skills.
+                I'm a Bachelor of Computer Applications student
+                interested in technology and software development.
+                I'm currently building my programming foundation
+                and learning to create websites and practical projects.
+            </p>
+
+            <p>
+                My goal is to become a skilled developer by practising
+                consistently, solving problems, and building real-world
+                applications.
             </p>
         </section>
 
-        <section class="skills">
-            <h2>My Technical Skills</h2>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">My Technical Skills</h2>
 
-            <ul>
-                <li>HTML — Beginner</li>
-                <li>CSS — Learning</li>
-                <li>Git and GitHub — Learning</li>
-                <li>Java — Learning</li>
-            </ul>
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Learning webpage structure and semantic elements.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Learning colors, layouts, responsive design, and styling.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Git & GitHub</h3>
+                    <p>Practising repositories, commits, and website publishing.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Java</h3>
+                    <p>Developing my programming fundamentals.</p>
+                </div>
+
+            </div>
         </section>
 
-        <section class="goals">
-            <h2>My Goals</h2>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">My Projects</h2>
 
-            <ul>
-                <li>Build real-world projects.</li>
-                <li>Create a professional portfolio.</li>
-                <li>Improve my programming skills.</li>
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    My first website, built using HTML and CSS
+                    and published using GitHub Pages.
+                </p>
+
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">GitHub Pages</span>
+            </div>
+
+            <div class="project-card">
+                <h3>More Projects Coming Soon</h3>
+
+                <p>
+                    I'm learning new technologies and will add
+                    more projects as I complete them.
+                </p>
+            </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="goals" class="section">
+            <h2 class="section-title">My Goals</h2>
+
+            <ul class="goal-list">
+                <li>Improve my HTML and CSS skills.</li>
+                <li>Learn Java programming thoroughly.</li>
+                <li>Build useful real-world projects.</li>
+                <li>Learn data structures and algorithms.</li>
                 <li>Prepare for software development internships.</li>
             </ul>
         </section>
 
-        <section class="contact">
-            <h2>My Learning Journey</h2>
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact</h2>
+
             <p>
-                I am learning step by step and working towards
-                becoming a skilled software developer.
+                Thank you for visiting my portfolio.
+                You can explore my coding projects on GitHub.
             </p>
+
+            <!-- Replace YOUR-USERNAME with your actual GitHub username -->
+            <a
+                href="https://github.com/YOUR-USERNAME"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit My GitHub
+            </a>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Aman | Built with HTML and CSS</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Aman. Built with HTML and CSS.</p>
     </footer>
 
 </body>
