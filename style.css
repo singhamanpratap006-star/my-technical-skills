@@ -1,18 +1,249 @@
-body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
+/* General Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-h1 {
-    color: #0066cc;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #243047;
+    line-height: 1.7;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background-color: #14213d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #64dfdf;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #64dfdf;
+}
+
+/* Home / Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #14213d, #243b67);
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.welcome {
+    color: #64dfdf;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #64dfdf;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 17px;
+    color: #e0e7f3;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #64dfdf;
+    color: #14213d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #48c6c6;
+    transform: translateY(-3px);
+}
+
+/* General Sections */
+.section {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(20, 33, 61, 0.07);
+    scroll-margin-top: 90px;
+}
+
+.section-title {
+    color: #14213d;
+    font-size: 30px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
-p {
-    color: #333333;
-    font-size: 18px;
+.section > p {
+    margin-bottom: 15px;
 }
 
-h2 {
-    color: #008060;
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 25px;
+    background-color: #f0f8ff;
+    border-left: 4px solid #0077b6;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+/* Projects */
+.project-card {
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #dce5ef;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.project-tag {
+    display: inline-block;
+    margin: 12px 5px 0 0;
+    padding: 5px 12px;
+    background-color: #e0f7fa;
+    color: #006064;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Goals */
+.goal-list {
+    padding-left: 25px;
+}
+
+.goal-list li {
+    margin-bottom: 10px;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 25px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #14213d;
+    color: white;
+    padding: 25px 15px;
+    margin-top: 50px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 12px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: 65vh;
+        padding: 55px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .section {
+        margin: 20px 12px;
+        padding: 25px 20px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
