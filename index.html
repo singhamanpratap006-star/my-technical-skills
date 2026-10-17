@@ -11,11 +11,16 @@
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav class="navbar">
-        <a href="#home" class="logo">Aman.dev</a>
+        <a href="#home" class="logo">AMAN<span>.</span></a>
 
-        <ul class="nav-links">
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -24,140 +29,335 @@
         </ul>
     </nav>
 
-    <!-- Home Section -->
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+    <!-- Home -->
+    <header class="hero" id="home">
+        <div class="hero-glow"></div>
 
-            <h1>Hello, I'm <span>Aman!</span></h1>
+        <div class="hero-content reveal">
+            <p class="eyebrow">WELCOME TO MY DIGITAL WORLD</p>
 
-            <h2>Aspiring Software Developer</h2>
+            <h1>I'm <span class="accent">Aman.</span></h1>
+
+            <h2>I am a <span id="typing-text"></span><span class="cursor">|</span></h2>
 
             <p class="hero-description">
-                I'm a BCA student learning web development,
-                programming, and software engineering.
-                I enjoy turning ideas into real projects.
+                A BCA student exploring technology, building projects,
+                and developing the skills to turn ideas into reality.
             </p>
 
-            <a href="#projects" class="button">Explore My Work</a>
+            <div class="hero-buttons">
+                <a href="#about" class="button primary-button">
+                    Discover Me <span>↘</span>
+                </a>
+
+                <a href="#projects" class="button secondary-button">
+                    Explore Projects
+                </a>
+            </div>
         </div>
+
+        <div class="hero-bottom">
+            <span>SCROLL TO EXPLORE</span>
+            <span class="scroll-line"></span>
+        </div>
+
+        <div class="hero-index">01 / 05</div>
     </header>
 
     <main>
 
-        <!-- About Section -->
-        <section id="about" class="section">
-            <h2 class="section-title">About Me</h2>
+        <!-- About -->
+        <section class="about section" id="about">
 
-            <p>
-                I'm a Bachelor of Computer Applications student
-                interested in technology and software development.
-                I'm currently building my programming foundation
-                and learning to create websites and practical projects.
-            </p>
+            <div class="section-heading reveal">
+                <p class="eyebrow">01 — THE PERSON BEHIND THE CODE</p>
+                <h2>Beyond the <span class="accent">Code.</span></h2>
+                <p class="section-subtitle">
+                    My mindset. My qualities. My journey.
+                </p>
+            </div>
 
-            <p>
-                My goal is to become a skilled developer by practising
-                consistently, solving problems, and building real-world
-                applications.
-            </p>
+            <div class="about-layout">
+
+                <div class="about-copy reveal">
+                    <span class="vertical-label">ABOUT AMAN</span>
+
+                    <h3>Always learning.<br>Always evolving.</h3>
+
+                    <p>
+                        I'm a Bachelor of Computer Applications student
+                        interested in software development, technology,
+                        and creative problem-solving.
+                    </p>
+
+                    <p>
+                        I'm building my technical foundation one project
+                        at a time. My goal is to understand how things work,
+                        create useful applications, and become a capable
+                        developer through consistent practice.
+                    </p>
+
+                    <div class="about-signature">
+                        <span class="signature-dot"></span>
+                        CURRENTLY LEARNING & BUILDING
+                    </div>
+                </div>
+
+                <!-- Replace this placeholder with an anime image you have
+                     permission to use. -->
+                <div class="anime-panel reveal">
+                    <div class="anime-frame">
+                        <div class="anime-placeholder">
+                            <span class="anime-symbol">A.</span>
+                            <p>CALM MIND. CLEAR STRATEGY.</p>
+                            <small>AYANOKOJI-INSPIRED AESTHETIC</small>
+                        </div>
+                    </div>
+
+                    <div class="anime-caption">
+                        <span>THE MINDSET</span>
+                        <span>01 — THINK DIFFERENTLY</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="qualities-grid">
+
+                <article class="quality-card reveal">
+                    <span class="card-number">01</span>
+                    <span class="card-icon">◈</span>
+                    <h3>Curious Mind</h3>
+                    <p>
+                        I enjoy exploring new technologies and
+                        understanding how things work.
+                    </p>
+                    <span class="card-line"></span>
+                </article>
+
+                <article class="quality-card reveal">
+                    <span class="card-number">02</span>
+                    <span class="card-icon">✳</span>
+                    <h3>Creative Thinker</h3>
+                    <p>
+                        I like turning imagination and ideas into
+                        creative digital projects.
+                    </p>
+                    <span class="card-line"></span>
+                </article>
+
+                <article class="quality-card reveal">
+                    <span class="card-number">03</span>
+                    <span class="card-icon">⌘</span>
+                    <h3>Problem Solver</h3>
+                    <p>
+                        I work towards solving challenges by
+                        breaking them into smaller steps.
+                    </p>
+                    <span class="card-line"></span>
+                </article>
+
+                <article class="quality-card reveal">
+                    <span class="card-number">04</span>
+                    <span class="card-icon">↗</span>
+                    <h3>Always Evolving</h3>
+                    <p>
+                        I aim to improve my skills through
+                        learning, practice, and building projects.
+                    </p>
+                    <span class="card-line"></span>
+                </article>
+
+            </div>
+
+            <div class="journey reveal">
+                <div class="journey-heading">
+                    <p class="eyebrow">THE JOURNEY</p>
+                    <h3>Progress over perfection.</h3>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <h4>LEARN</h4>
+                        <p>Build strong fundamentals.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <h4>BUILD</h4>
+                        <p>Turn knowledge into projects.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <h4>EVOLVE</h4>
+                        <p>Improve through experience.</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <h2 class="section-title">My Technical Skills</h2>
+        <!-- Skills -->
+        <section class="section skills-section" id="skills">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">02 — MY TOOLKIT</p>
+                <h2>Skills in <span class="accent">Progress.</span></h2>
+                <p class="section-subtitle">
+                    Technologies I'm learning and practising.
+                </p>
+            </div>
 
             <div class="skills-grid">
 
-                <div class="skill-card">
+                <article class="skill-card reveal">
+                    <span class="skill-number">01</span>
                     <h3>HTML</h3>
-                    <p>Learning webpage structure and semantic elements.</p>
-                </div>
+                    <p>Structuring websites and content.</p>
+                    <div class="skill-track"><span style="--level: 65%"></span></div>
+                    <small>LEARNING</small>
+                </article>
 
-                <div class="skill-card">
+                <article class="skill-card reveal">
+                    <span class="skill-number">02</span>
                     <h3>CSS</h3>
-                    <p>Learning colors, layouts, responsive design, and styling.</p>
-                </div>
+                    <p>Design, layouts, and animations.</p>
+                    <div class="skill-track"><span style="--level: 45%"></span></div>
+                    <small>LEARNING</small>
+                </article>
 
-                <div class="skill-card">
-                    <h3>Git & GitHub</h3>
-                    <p>Practising repositories, commits, and website publishing.</p>
-                </div>
-
-                <div class="skill-card">
+                <article class="skill-card reveal">
+                    <span class="skill-number">03</span>
                     <h3>Java</h3>
-                    <p>Developing my programming fundamentals.</p>
-                </div>
+                    <p>Programming fundamentals and logic.</p>
+                    <div class="skill-track"><span style="--level: 40%"></span></div>
+                    <small>LEARNING</small>
+                </article>
+
+                <article class="skill-card reveal">
+                    <span class="skill-number">04</span>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control and project publishing.</p>
+                    <div class="skill-track"><span style="--level: 55%"></span></div>
+                    <small>LEARNING</small>
+                </article>
 
             </div>
-        </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2 class="section-title">My Projects</h2>
-
-            <div class="project-card">
-                <h3>Personal Portfolio Website</h3>
-
-                <p>
-                    My first website, built using HTML and CSS
-                    and published using GitHub Pages.
-                </p>
-
-                <span class="project-tag">HTML</span>
-                <span class="project-tag">CSS</span>
-                <span class="project-tag">GitHub Pages</span>
-            </div>
-
-            <div class="project-card">
-                <h3>More Projects Coming Soon</h3>
-
-                <p>
-                    I'm learning new technologies and will add
-                    more projects as I complete them.
-                </p>
-            </div>
-        </section>
-
-        <!-- Goals Section -->
-        <section id="goals" class="section">
-            <h2 class="section-title">My Goals</h2>
-
-            <ul class="goal-list">
-                <li>Improve my HTML and CSS skills.</li>
-                <li>Learn Java programming thoroughly.</li>
-                <li>Build useful real-world projects.</li>
-                <li>Learn data structures and algorithms.</li>
-                <li>Prepare for software development internships.</li>
-            </ul>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2 class="section-title">Contact</h2>
-
-            <p>
-                Thank you for visiting my portfolio.
-                You can explore my coding projects on GitHub.
+            <p class="skill-note reveal">
+                These bars are illustrative, not measured proficiency scores.
+                I'll update them as I gain practical experience.
             </p>
 
-            <!-- Replace YOUR-USERNAME with your actual GitHub username -->
-            <a
-                href="https://github.com/YOUR-USERNAME"
-                class="button"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Visit My GitHub
-            </a>
+        </section>
+
+        <!-- Projects -->
+        <section class="section projects-section" id="projects">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">03 — THINGS I'M CREATING</p>
+                <h2>Ideas into <span class="accent">Reality.</span></h2>
+                <p class="section-subtitle">
+                    My learning journey, one project at a time.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card reveal">
+                    <div class="project-top">
+                        <span class="project-icon">&lt;/&gt;</span>
+                        <span class="project-status">LIVE WEBSITE</span>
+                    </div>
+
+                    <p class="project-category">WEB DEVELOPMENT</p>
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A personal website built with HTML and CSS
+                        and published using GitHub Pages.
+                    </p>
+
+                    <a href="#home" class="project-link">
+                        YOU ARE HERE <span>↗</span>
+                    </a>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-top">
+                        <span class="project-icon">{ }</span>
+                        <span class="project-status">IN PROGRESS</span>
+                    </div>
+
+                    <p class="project-category">PROGRAMMING</p>
+                    <h3>Java Projects</h3>
+                    <p>
+                        Practising programming concepts and
+                        learning how to build useful applications.
+                    </p>
+
+                    <a href="#contact" class="project-link">
+                        MORE COMING SOON <span>↗</span>
+                    </a>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-top">
+                        <span class="project-icon">✳</span>
+                        <span class="project-status">PLANNED</span>
+                    </div>
+
+                    <p class="project-category">EXPERIMENTS</p>
+                    <h3>Future Builds</h3>
+                    <p>
+                        Exploring new ideas and developing
+                        practical projects as my skills grow.
+                    </p>
+
+                    <a href="#skills" class="project-link">
+                        FOLLOW MY JOURNEY <span>↗</span>
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-box reveal">
+                <p class="eyebrow">04 — THE NEXT CHAPTER</p>
+                <h2>Let's build something <span class="accent">meaningful.</span></h2>
+                <p>
+                    I'm learning, experimenting, and building.
+                    Explore my code and follow my progress.
+                </p>
+
+                <!-- Replace YOUR-USERNAME with your GitHub username. -->
+                <a
+                    class="button primary-button"
+                    href="https://github.com/YOUR-USERNAME"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Visit My GitHub <span>↗</span>
+                </a>
+            </div>
+
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2026 Aman. Built with HTML and CSS.</p>
+        <a href="#home" class="logo">AMAN<span>.</span></a>
+        <p>Built with curiosity, code, and consistency.</p>
+        <span>© 2026 AMAN</span>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
